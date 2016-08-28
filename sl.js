@@ -93,7 +93,6 @@ function init(){
 
 /**
  * 暂停游戏
- * @return {[type]} [description]
  */
 function pauseGame(){
 	gameState = 2;
