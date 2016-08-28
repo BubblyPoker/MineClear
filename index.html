@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>扫雷</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body><!--左侧选项栏-->
+		<div class="main" id="options">
+			<table>
+				<tr>
+					<td colspan="2">时间：<span id="time">0</span></td>
+				</tr>
+				<tr>
+					<td colspan="2">得分：<span id="score">0</span></td>
+				</tr>
+				<tr>
+					<td>行：</td>
+					<td><input type="text" name="line" id="line"></td>
+				</tr>
+				<tr>
+					<td>列：</td>
+					<td><input type="text" name="column" id="column"></td>
+				</tr>
+				<tr>
+					<td>雷数：</td>
+					<td><input type="text" name="minesCount" id="minesCount"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="start">开始</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="pauseOrProceed">暂停</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="restart">重新开始</button></td>
+				</tr>
+			</table>
+		</div>
+		<div class="main" id="gameArea">
+			<table id='gameTable'></table>
+		</div>
+		<script type="text/javascript" src="./sl.js" ></script>
+	</body>
+</html>
